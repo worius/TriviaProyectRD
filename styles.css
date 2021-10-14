@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+}
+.preguntacuadro{
+    background-color: #00cc66;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.caja{
+    background-color: #1e1e2f;
+    text-align: center;
+    margin: auto;
+}
+.home{
+    background-color: #1e1e2f;
+    text-align: center;
+    margin: auto;
+}
+.botones{
+    background-color: white;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.botones:hover{
+    background-color: lightslategray;
+}
+.puntos{
+    color: white;
+    background-color: goldenrod;
+    margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    body{
+        background-color: #1e1e2f;
+    }
+    .caja{
+        padding-bottom: 10vw;
+    }
+    .home{
+        padding-bottom: 10vw;
+    }
+    .botones{
+        font-size: 5vw;
+        margin-bottom: 10vw;
+        padding: 5%;
+        border-radius: 25px
+    }
+    .preguntacuadro{
+        font-size: 5vw;
+        margin-bottom: 13vw;
+        padding: 10vw 0vw; 
+    }
+    .puntos{
+        font-size: 8vw;
+        padding: 4vw;
+        position: fixed;
+        bottom: 0;
+        z-index: 999999;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .preguntacuadro{
+        font-size: 1.5vw;
+        padding: 3vw;
+        margin-bottom: 2vw;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .caja{
+        margin-top: 5%;
+        padding-bottom: 2vw;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .home{
+        margin-top: 5%;
+        padding-bottom: 2vw;
+        border-radius: 50px 50px 50px 50px;
+    }
+    .botones{
+        border-radius: 10px;
+        margin-bottom: 1vw;
+        font-size: 1.5vw;
+        padding: 2vw;
+        border-radius: 50px
+    }
+    .puntos{
+        font-size: 2vw;
+        border-radius: 0px 0px 50px 50px;
+        padding: 1vw;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home col-12 col-md-4" id="home" style="display: block;">
+        <img src="logo1.jpg" style="width: 90%; margin-top: 15%;">
+        <button class="botones" style="margin-top: 30%; margin-bottom: 30%;" onclick=comenzar()>COMENZAR TRIVIA</button>
+    </div>
+    <div class="caja col-12 col-md-4" id="trivia" style="display: none;">
+        <div class="preguntacuadro col-12">
+            <p id="quest"></p>
+        </div>
+        <button class="botones col-10" id="respuesta1" onclick=responder(this)></button>
+        <button class="botones col-10" id="respuesta2" onclick=responder(this)></button>
+        <button class="botones col-10" id="respuesta3" onclick=responder(this)></button>
+    </div>
+    <div class="puntos col-12 col-md-4" id="puntaje" style="display: none;">Tu Puntacion es: 0</div>
+    <div class="final home col-12 col-md-4" id="final" style="display: none; border-radius: 50px 50px 0px 0px;">
+        <img src="logo1.jpg" style="width: 90%; margin-top: 15%;">
+    </div>
+    <div class="puntos col-12 col-md-4" id="puntajeFinal" style="margin-bottom: 50%; display: none;"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
